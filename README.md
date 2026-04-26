@@ -99,7 +99,25 @@ INSERT INTO doctors (name, specialization) VALUES
 
 3. Update Database Credentials
 In every servlet, locate this line:
-
-java
+```
+3. Update Database Credentials
+In every servlet, locate this line:
+```java
 Connection con = DriverManager.getConnection(
     "jdbc:mysql://localhost:3306/hospital_db", "root", "root");
+```
+4. Add MySQL Connector
+Download mysql-connector-java-x.x.xx.jar
+Place it in src/main/webapp/WEB-INF/lib/
+Also copy it to TOMCAT_HOME/lib/ (e.g., C:\Tomcat11\lib)
+
+5. Deploy & Run
+Import the project into Eclipse as a Dynamic Web Project.
+Right-click project → Run As → Run on Server → select Tomcat 9.
+Open browser to:
+http://localhost:8080/HospitalAppointmentSystem/
+<img width="1920" height="1080" alt="Screenshot 2026-04-26 211659" src="https://github.com/user-attachments/assets/2492bd3d-64a7-4b9d-870a-161a5f24a2cf" />
+
+🤝 Contributing
+This is a mini‑project created for academic purposes.
+Feel free to fork and improve – pull requests are welcome.
