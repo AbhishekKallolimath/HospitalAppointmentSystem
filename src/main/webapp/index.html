@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CarePlus Hospital | Admin Dashboard</title>
+    <title>CarePlus Hospital | Dashboard</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -20,7 +19,6 @@
             align-items: center;
             padding: 20px;
         }
-
         .dashboard {
             max-width: 1200px;
             width: 100%;
@@ -29,63 +27,52 @@
             overflow: hidden;
             box-shadow: 0 20px 60px rgba(0,0,0,0.3);
         }
-
         .header {
             background: linear-gradient(135deg, #3a1c71, #d76d77, #ffaf7b);
             padding: 30px;
             text-align: center;
             color: white;
         }
-
         .header h1 {
             font-size: 2.5rem;
             margin-bottom: 10px;
         }
-
         .header p {
             font-size: 1.1rem;
             opacity: 0.9;
         }
-
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 25px;
             padding: 40px;
         }
-
         .card {
             background: #f8f9ff;
             border-radius: 20px;
             padding: 25px;
             text-align: center;
             transition: all 0.3s ease;
-            cursor: pointer;
             border: 1px solid rgba(0,0,0,0.05);
         }
-
         .card:hover {
             transform: translateY(-8px);
             box-shadow: 0 15px 30px rgba(0,0,0,0.1);
             background: white;
         }
-
         .card-icon {
             font-size: 48px;
             margin-bottom: 15px;
         }
-
         .card h3 {
             font-size: 1.5rem;
             margin-bottom: 10px;
             color: #333;
         }
-
         .card p {
             color: #666;
             margin-bottom: 20px;
         }
-
         .btn {
             display: inline-block;
             background: linear-gradient(135deg, #667eea, #764ba2);
@@ -96,12 +83,10 @@
             font-weight: bold;
             transition: 0.3s;
         }
-
         .btn:hover {
             transform: scale(1.05);
             box-shadow: 0 5px 15px rgba(0,0,0,0.2);
         }
-
         .footer {
             background: #f1f1f1;
             text-align: center;
@@ -109,15 +94,9 @@
             color: #777;
             font-size: 0.8rem;
         }
-
         @media (max-width: 768px) {
-            .grid {
-                padding: 20px;
-                gap: 15px;
-            }
-            .header h1 {
-                font-size: 1.8rem;
-            }
+            .grid { padding: 20px; gap: 15px; }
+            .header h1 { font-size: 1.8rem; }
         }
     </style>
 </head>
@@ -147,12 +126,6 @@
                 <a href="delete-patient.html" class="btn">Delete</a>
             </div>
             <div class="card">
-                <div class="card-icon">🆕</div>
-                <h3>Create Table</h3>
-                <p>Create new table in database (CREATE operation)</p>
-                <a href="createTable" class="btn">Create Feedback Table</a>
-            </div>
-            <div class="card">
                 <div class="card-icon">👁️</div>
                 <h3>View All Appointments</h3>
                 <p>Display all appointments (SELECT operation)</p>
@@ -160,7 +133,7 @@
             </div>
         </div>
         <div class="footer">
-            <p>All SQL operations: INSERT, UPDATE, DELETE, CREATE, SELECT | Powered by Servlets + JDBC</p>
+            <p>All SQL operations: INSERT, UPDATE, DELETE, SELECT | Powered by Servlets + JDBC</p>
         </div>
     </div>
 </body>
