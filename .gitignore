@@ -1,0 +1,24 @@
+# Compiled Java files
+*.class
+*.jar
+*.war
+
+# Eclipse project files
+.settings/
+.project
+.classpath
+bin/
+tmp/
+.metadata
+
+# Log files
+*.log
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# Your secret database password file (if you created one)
+db.properties
+config.properties
+/build/

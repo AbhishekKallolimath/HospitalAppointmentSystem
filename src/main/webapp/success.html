@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success | CarePlus</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #11998e, #38ef7d);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            padding: 40px;
+            border-radius: 30px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+            max-width: 500px;
+            width: 100%;
+        }
+        h2 {
+            color: #2e7d32;
+            margin-bottom: 15px;
+            font-size: 2rem;
+        }
+        .message {
+            font-size: 1.2rem;
+            color: #333;
+            margin: 20px 0;
+            padding: 12px;
+            background: #e8f5e9;
+            border-radius: 20px;
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            background: #11998e;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        a:hover {
+            transform: scale(1.02);
+            background: #0d7a6e;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>✅ Operation Successful!</h2>
+        <div class="message" id="msgDisplay">Processing completed.</div>
+        <a href="index.html">🏠 Return to Dashboard</a>
+    </div>
+    <script>
+        // Read message from URL parameter (pure JS, no JSP)
+        const urlParams = new URLSearchParams(window.location.search);
+        const msg = urlParams.get('msg');
+        if (msg) {
+            document.getElementById('msgDisplay').innerHTML = decodeURIComponent(msg);
+        }
+    </script>
+</body>
+</html>

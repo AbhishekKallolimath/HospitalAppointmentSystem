@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Delete Patient Record</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            max-width: 500px;
+            width: 100%;
+            padding: 35px;
+            border-radius: 30px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+        h2 {
+            color: #d9534f;
+            margin-bottom: 10px;
+        }
+        .warning {
+            background: #fff3cd;
+            color: #856404;
+            padding: 10px;
+            border-radius: 12px;
+            margin: 20px 0;
+            font-size: 0.9rem;
+        }
+        input {
+            width: 100%;
+            padding: 12px;
+            margin: 15px 0;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+        }
+        button {
+            background: #d9534f;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 40px;
+            width: 100%;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .back-link {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>⚠️ Delete Patient Record</h2>
+        <div class="warning">
+            This will permanently delete the patient and all their appointments.
+        </div>
+        <form action="deletePatient" method="post">
+            <input type="number" name="patientId" placeholder="Patient ID" required>
+            <button type="submit">Delete Permanently</button>
+        </form>
+        <div class="back-link">
+            <a href="index.html">← Cancel</a>
+        </div>
+    </div>
+</body>
+</html>
