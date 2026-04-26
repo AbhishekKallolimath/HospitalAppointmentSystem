@@ -97,5 +97,9 @@ INSERT INTO doctors (name, specialization) VALUES
 ('Dr. Amit Patel', 'Orthopedic'),
 ('Dr. Neha Gupta', 'Pediatrician');
 
+3. Update Database Credentials
+In every servlet, locate this line:
 
-
+java
+Connection con = DriverManager.getConnection(
+    "jdbc:mysql://localhost:3306/hospital_db", "root", "root");
